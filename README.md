@@ -12,23 +12,28 @@ Landing site for the **EasyQ2C AI Prarambh Lab** — a 2-week hybrid weekend AI 
 4. Branch: **main** / **/ (root)**
 5. Save — site goes live in 1–2 minutes
 
-## Before launch — replace placeholders
+In `config.js`, set your links (must start with `https://` for the form):
 
-In `index.html`, search for `REPLACE_` and update:
+```js
+const SITE_CONFIG = {
+  formUrl: 'https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform',
+  whatsapp: '919876543210',
+  whatsappDisplay: '+91 98765 43210'
+};
+```
 
-| Placeholder | What to add |
-|-------------|-------------|
-| `REPLACE_FORM_URL` | Google Form pre-screening link |
-| `REPLACE_WHATSAPP` | WhatsApp number (e.g. `919876543210`) |
-| `REPLACE_WHATSAPP_DISPLAY` | Display format (e.g. `+91 98765 43210`) |
+Until `formUrl` is set, Apply buttons scroll to the enroll section and show a "coming soon" notice — they will **not** cause a 404.
 
 ## Structure
 
 ```
 .
 ├── index.html      # Landing page
+├── config.js       # Form URL + WhatsApp (edit this)
+├── site.js         # Wires buttons safely
+├── styles.css
 ├── assets/         # Logo and images
-└── README.md       # This file
+└── README.md
 ```
 
 ## Operator

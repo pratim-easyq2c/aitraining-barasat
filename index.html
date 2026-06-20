@@ -50,8 +50,8 @@
           <span class="badge">Tools included</span>
         </div>
         <div class="hero-cta">
-          <a href="REPLACE_FORM_URL" class="btn btn-primary" target="_blank" rel="noopener">Apply — Pre-screening Form</a>
-          <a href="https://wa.me/REPLACE_WHATSAPP" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a href="#enroll" data-form-btn class="btn btn-primary">Apply — Pre-screening Form</a>
+          <a href="#" data-whatsapp-btn class="btn btn-outline">WhatsApp Us</a>
         </div>
       </div>
       <div class="hero-card">
@@ -245,9 +245,14 @@
       <div class="cta-band">
         <h2>Ready to start your AI journey?</h2>
         <p>ইয়ার ১২ বা স্নাতক? CS নন? আজই আবেদন করুন — মাত্র ৯টি সিট।</p>
+        <div id="formPendingNotice" class="form-pending-notice" style="display:none;">
+          <strong>Pre-screening form coming soon.</strong>
+          Scroll down after we publish the Google Form link — or message us on WhatsApp when available.
+          <br><span class="bn-inline">ফর্ম শীঘ্রই আসছে — WhatsApp এ যোগাযোগ করুন।</span>
+        </div>
         <div class="cta-buttons">
-          <a href="REPLACE_FORM_URL" class="btn btn-primary" target="_blank" rel="noopener">Start Pre-screening Form</a>
-          <a href="https://wa.me/REPLACE_WHATSAPP" class="btn btn-whatsapp" target="_blank" rel="noopener">WhatsApp REPLACE_WHATSAPP_DISPLAY</a>
+          <a href="#enroll" data-form-btn class="btn btn-primary">Start Pre-screening Form</a>
+          <a href="#" data-whatsapp-btn class="btn btn-whatsapp">Contact on WhatsApp</a>
         </div>
       </div>
     </div>
@@ -264,19 +269,7 @@
     </div>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('menuToggle');
-    const nav = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => nav.classList.toggle('open'));
-    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
-
-    if (window.innerWidth >= 900) {
-      document.getElementById('headerCtaDesktop').style.display = 'inline-flex';
-    }
-    window.addEventListener('resize', () => {
-      document.getElementById('headerCtaDesktop').style.display =
-        window.innerWidth >= 900 ? 'inline-flex' : 'none';
-    });
-  </script>
+  <script src="config.js"></script>
+  <script src="site.js"></script>
 </body>
 </html>
