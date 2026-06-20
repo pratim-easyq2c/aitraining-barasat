@@ -284,6 +284,12 @@ section {
 }
 
 /* Instructor */
+.instructors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
 .instructor-card {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -559,6 +565,10 @@ section {
   }
 
   .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instructors-grid {
     grid-template-columns: 1fr;
   }
 
