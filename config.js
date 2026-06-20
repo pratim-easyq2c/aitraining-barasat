@@ -4,7 +4,7 @@
  */
 const SITE_CONFIG = {
   // Paste your Google Form link here when ready:
-  formUrl: '',
+  formUrl: 'https://forms.gle/2zZFt1VLwESCaXAH8',
 
   // WhatsApp: country code + number, no + or spaces (e.g. '919876543210')
   whatsapp: '',
