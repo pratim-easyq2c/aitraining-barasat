@@ -211,7 +211,25 @@ a {
   letter-spacing: 0.12em;
   font-size: 0.7rem;
   color: #9fdcf2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero-speed {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(143, 229, 211, 0.14);
+  border: 1px solid rgba(143, 229, 211, 0.45);
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  margin-bottom: 1.1rem;
+}
+
+.hero-speed strong {
+  color: #8fe5d3;
+  font-weight: 800;
 }
 
 .hero h1 {
@@ -260,6 +278,13 @@ a {
   border-radius: 999px;
 }
 
+.tag-accent {
+  color: #0c223d;
+  background: linear-gradient(135deg, #8fe5d3, #6fd4c4);
+  border-color: transparent;
+  font-weight: 700;
+}
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -283,6 +308,20 @@ a {
   letter-spacing: 0.1em;
   color: var(--text-muted);
   margin-bottom: 0.45rem;
+}
+
+.ticket-duration {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--brand-deep);
+  background: #e6f7f4;
+  border: 1px solid #b8e8dc;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  margin-bottom: 0.85rem;
 }
 
 .ticket-price {
@@ -322,6 +361,67 @@ a {
 
 .ticket-row dd {
   font-size: 0.9rem;
+  color: var(--text);
+}
+
+/* Speed strip */
+.speed-strip {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1.35rem 0;
+}
+
+.speed-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.speed-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-soft) 100%);
+  color: var(--white);
+  text-align: center;
+}
+
+.speed-num {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #8fe5d3;
+}
+
+.speed-unit {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-top: 0.2rem;
+  color: #c8e4f8;
+}
+
+.speed-copy p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.98rem;
+}
+
+.speed-copy p + p {
+  margin-top: 0.45rem;
+}
+
+.speed-bn {
+  font-family: var(--font-bn);
+  font-weight: 600;
   color: var(--text);
 }
 
@@ -766,6 +866,23 @@ section {
   }
   .enroll-steps {
     grid-template-columns: 1fr;
+  }
+  .speed-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .speed-stat {
+    flex-direction: row;
+    gap: 0.5rem;
+    width: fit-content;
+    padding: 0.5rem 0.85rem;
+  }
+  .speed-num {
+    font-size: 1.8rem;
+  }
+  .speed-unit {
+    margin-top: 0;
+    align-self: center;
   }
   .cta-block {
     padding: 2rem 1.1rem;

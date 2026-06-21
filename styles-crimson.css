@@ -123,7 +123,20 @@ a { color: inherit; }
   letter-spacing: 0.11em;
   font-weight: 700;
 }
-.eyebrow { color: #98dbef; margin-bottom: 0.9rem; }
+.eyebrow { color: #98dbef; margin-bottom: 0.75rem; }
+.hero-speed {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(152, 219, 239, 0.12);
+  border: 1px solid rgba(152, 219, 239, 0.4);
+  padding: 0.42rem 0.8rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+.hero-speed strong { color: #98dbef; font-weight: 800; }
 .hero h1 {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 4.4vw, 3.2rem);
@@ -150,6 +163,18 @@ a { color: inherit; }
   border-radius: var(--radius);
   padding: 1.4rem;
   box-shadow: 0 16px 34px rgba(7, 26, 54, 0.28);
+}
+.panel-duration {
+  display: inline-block;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand);
+  background: #e8f4fc;
+  border: 1px solid #c5dff0;
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
 }
 .hero-panel h2 {
   font-family: var(--font-heading);
@@ -188,7 +213,34 @@ a { color: inherit; }
   color: var(--brand);
   font-size: 1.35rem;
 }
+.trust-featured {
+  background: linear-gradient(160deg, #0f2a4b 0%, #19466f 100%);
+  border-right: none !important;
+  border-radius: 12px;
+  padding: 0.85rem 1rem !important;
+  margin-right: 0.4rem;
+}
+.trust-featured h3 { color: #98dbef; font-size: 1.8rem; }
+.trust-featured p { color: #d6e8fa !important; font-weight: 600; }
 .trust-grid p { color: var(--text-soft); font-size: 0.85rem; }
+
+.speed-strip {
+  background: #f4f8fc;
+  border-bottom: 1px solid var(--line);
+  padding: 1.2rem 0;
+}
+.speed-inner p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+  max-width: 52rem;
+}
+.speed-inner p + p { margin-top: 0.4rem; }
+.speed-bn {
+  font-family: var(--font-bn);
+  font-weight: 600;
+  color: var(--text) !important;
+}
 
 .section { padding: 4rem 0; }
 .section-alt { background: var(--surface-alt); border-block: 1px solid var(--line); }
