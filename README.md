@@ -1,6 +1,6 @@
-# EasyQ2C AI Prarambh Lab — Barasat
+# EasyQ2C AI Prostuti — Barasat
 
-Landing site for the **EasyQ2C AI Prarambh Lab** — a 2-week hybrid weekend AI course in Barasat for Year 12 and graduation students (non-CS).
+Landing site for **EasyQ2C AI Prostuti (AI প্রস্তুতি)** — a 2-week hybrid weekend AI course in Barasat for Year 12 and graduation students.
 
 **Live site (after GitHub Pages enabled):** https://pratim-easyq2c.github.io/aitraining-barasat/
 
