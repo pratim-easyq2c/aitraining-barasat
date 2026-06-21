@@ -247,9 +247,21 @@ a {
 
 .hero-bn {
   font-family: var(--font-bn);
-  font-size: 1.08rem;
-  color: #e3f6ff;
-  margin-bottom: 1.35rem;
+  font-size: 1.02rem;
+  color: #c8e8f8;
+  margin-bottom: 1.2rem;
+}
+
+.hero-tagline {
+  font-family: var(--font-bn);
+  font-size: clamp(1.15rem, 2.8vw, 1.45rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.45;
+  margin-bottom: 0.65rem;
+  max-width: 36rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid #8fe5d3;
 }
 
 .hero-lead {
@@ -427,17 +439,31 @@ a {
 
 /* Tagline banner */
 .tagline-banner {
-  background: linear-gradient(135deg, #0f2a4b 0%, #19466f 100%);
+  background: linear-gradient(135deg, #0a4f55 0%, #0d7f87 48%, #09666d 100%);
   color: var(--white);
-  padding: 1.15rem 0;
+  padding: 1.65rem 0;
+  border-block: 3px solid #8fe5d3;
 }
 
-.tagline-banner p {
+.tagline-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #b8efe6;
+  margin: 0 0 0.45rem;
+  text-align: center;
+}
+
+.tagline-quote {
   font-family: var(--font-bn);
-  font-size: clamp(1rem, 2.4vw, 1.15rem);
-  font-weight: 600;
+  font-size: clamp(1.15rem, 3vw, 1.55rem);
+  font-weight: 700;
   line-height: 1.45;
   margin: 0;
+  text-align: center;
+  max-width: 44rem;
+  margin-inline: auto;
 }
 
 /* Proof strip */
